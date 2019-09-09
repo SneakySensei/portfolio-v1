@@ -1,0 +1,241 @@
+html::-webkit-scrollbar { 
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('./fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('./fonts/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('./fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('./fonts/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('./fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('./fonts/ubuntu-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+    margin: 0%;
+}
+
+.topbarshadow{
+    position: absolute;
+    top: -1px;
+    left: -10vw;
+    z-index: -1;
+    background-color: rgb(0, 7, 20);
+    box-shadow: 0px 0px 60px 40px black;
+    width: 200vw;
+    height: 1px;
+}
+/* 
+body ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+    display: inline-flexbox;
+    justify-content: right;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 20;
+    cursor: default;
+    color: white;
+}
+
+.navbar ul{
+    list-style: none;
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul li a {
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    font-family: ubuntulight;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar ul li a:hover {
+    font-size: 16pt;
+    color: white;
+}
+
+.navbar ul li a:active{
+    font-size: 14pt;
+    color: rgb(184, 184, 184);
+}
+
+
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    cursor: default;
+    color: black;
+}
+
+.navlinks ul{
+    list-style: none;
+    font-size: 14pt;
+    color: black;
+    margin-top: 10px;
+}
+
+.navlinks ul li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0pt 15pt;
+    color: black;
+}
+
+.navlinks ul li a {
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    font-family: ubuntulight;
+    display: block;
+    border-radius: 10pt;
+    background-color: #000000dd;
+    color: white;
+    text-decoration: none;
+    width: 8vw;
+    padding: 14px 10px;
+}
+
+.navlinks ul li a:hover {
+    background-color: #aaad;
+    color: white;
+}
+
+.navlinks ul li a:active{
+    background-color: #333333dd;
+    color: white;
+    font-size: 12pt;
+}
+  
+.background{
+    position: absolute;
+    width: 100vw;
+    size: cover;
+    top:-10vw;
+    z-index: -10;
+}
+
+.dropshadow{
+    position: absolute;
+    top: 100vh;
+    z-index: 15;
+    background-color: rgb(0, 7, 20);
+    box-shadow: 0px 0px 8px 2px black;
+    width: 70vw;
+    height: 1px;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.content{
+    position: absolute;
+    top: 100vh;
+    z-index: 10;
+    background-color: white;
+    width: 70vw;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    
+}
+
+.content h1{
+    font-family: ubuntubold;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.content .title{
+    font-family: ubuntubold;
+    margin-left: 2vw;
+}
+
+.content .subtitle{
+    font-family: ubuntulight;
+    margin-left: 4vw;
+}
+
+.content p{
+    font-size: 16pt;
+    font-family: ubunturegular;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content .inline{
+    margin-left: 6vw;
+}
+
+.greeting{
+    position: relative;
+    text-align: center;
+    font-size: 10vh;
+    top: 20vh;
+    left: -11.87vw;
+    color: white;
+    font-family: ubunturegular;
+}
+
+.name{
+    position: relative;
+    text-align: center;
+    font-size: 20vh;
+    top: 20vh;
+    transform: translate(-3px,0px);
+    color: white;
+    font-family: ubuntubold;
+}
+
+.qualities{
+    position: relative;
+    text-align: center;
+    font-size: 3.6vh;
+    top: 30vh;
+    transform: translate(-3px,0px);
+    color: rgb(221, 221, 221);
+    font-family: ubunturegular;
+}
