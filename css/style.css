@@ -213,6 +213,7 @@ body ul{
 .greeting{
     position: relative;
     text-align: center;
+    margin-left: 350px;
     font-size: 10vh;
     top: 20vh;
     left: -11.87vw;
